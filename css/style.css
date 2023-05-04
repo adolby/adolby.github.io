@@ -1,0 +1,380 @@
+body {
+  overflow-x: hidden;
+  color: #fff;
+  position: relative;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin: 2.5rem 0;
+  padding: 1.75rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.about {
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  margin: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal {
+  flex-flow: column;
+}
+
+.vertical {
+  flex-flow: row wrap;
+}
+
+.box {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 3rem 0 0.5rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.inline-heading {
+  display: inline;
+}
+
+.project-heading {
+  margin-top: 3.5rem;
+}
+
+.download-heading {
+  margin: 2.5rem 0 0.5rem 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  outline: 0;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.description a {
+  text-decoration: underline;
+}
+
+.aligned {
+  text-align: left;
+}
+
+.space {
+  margin-left: 0.45rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+nav ul a, nav ul span {
+  text-align: center;
+  display: block;
+  padding: 0.625em;
+  border-top: 1px solid white;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li:last-of-type a {
+  border-bottom: none;
+}
+
+.link-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.link-item {
+  list-style: none;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.9rem 1.14rem;
+}
+
+/* Buttons */
+.button-outline {
+  padding: 0.3rem 0.6rem;
+  border: solid 2px #fff;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: transparent;
+  text-shadow: none;
+}
+
+.button-outline:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.button-outline img {
+  width: 1.2rem;
+  margin-left: 0.1rem;
+  margin-right: 0.6rem;
+}
+
+/* Images */
+.social img {
+  width: 3rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-image {
+  height: auto;
+  width: 240px;
+}
+
+.project-icon {
+  height: 2rem;
+  margin-left: 0.9rem;
+}
+
+.os-icon {
+  width: 2rem;
+  margin-left: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.build-badge {
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
+
+footer img {
+  width: 2rem;
+}
+
+/* Lists */
+.unstyled-list-item {
+  list-style: none;
+  margin: 0.3rem;
+  padding: 0.25rem;
+}
+
+/* Download */
+.download {
+  margin: 2rem auto;
+}
+
+/* Alternate theme colors */
+.void {
+  background-color: #000;
+}
+
+.default {
+  background-color: #34495e;
+}
+
+.green {
+  background-color: #1d7f46;
+}
+
+.red {
+  background-color: #c0392b;
+}
+
+.blue {
+  background-color: #1c587f;
+}
+
+/* Large phone and larger */
+@media all and (min-width: 32rem) {
+  .button-outline {
+    padding: 0.3rem 0.6rem;
+    border: solid 2px #fff;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: transparent;
+    text-shadow: none;
+  }
+
+  .button-outline img {
+    width: 1.4rem;
+  }
+}
+
+/* Tablet and larger */
+@media all and (min-width: 48rem) {
+  section {
+    margin: 2.5rem;
+    padding: 2rem 4rem;
+  }
+
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  nav ul a, nav ul span {
+    text-align: inherit;
+    padding: 1em;
+    border: none;
+  }
+
+  nav a:hover {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .button-outline {
+    font-size: 1.8rem;
+  }
+
+  .list-unstyled {
+    margin: 0.1rem;
+    padding: 0.1rem;
+  }
+
+  /* Alternate theme background images */
+  .background-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .default {
+    background-image: url("../images/greenPath.jpg");
+  }
+
+  .green {
+    background-image: url("../images/forest.jpg");
+  }
+
+  .red {
+    background-image: url("../images/redFlowers.jpg");
+  }
+
+  .blue {
+    background-image: url("../images/seaMarker.jpg");
+  }
+
+  .aligned {
+    text-align: justify;
+  }
+}
+
+/* Laptop / Desktop */
+@media all and (min-width: 75rem) {
+  section, section.about {
+    margin: 5rem 12rem;
+    padding: 2rem 4.5rem;
+    padding-bottom: 3rem;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  nav ul a, nav ul span {
+    font-size: 2.5rem;
+  }
+
+  nav ul li {
+    margin-right: 3rem;
+  }
+
+  nav ul .name {
+    margin-left: 3rem;
+    flex-grow: 1;
+  }
+
+  .build-badge {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Widescreen */
+@media all and (min-width: 100rem) {
+  section, section.about {
+    margin: 5rem 20rem;
+    padding: 2rem 4.5rem;
+    padding-bottom: 3rem;
+  }
+}
